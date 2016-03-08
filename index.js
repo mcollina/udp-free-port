@@ -10,13 +10,8 @@ function freeUdpPort (cb) {
     }
 
     var address = socket.address()
-    socket.close(function (err) {
-      if (err) {
-        return cb(err)
-      }
-
-      cb(null, address.port)
-    })
+    socket.close()
+    setImmediate(cb, null, address.port)
   })
 }
 
