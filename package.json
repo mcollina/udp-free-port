@@ -1,6 +1,6 @@
 {
   "name": "udp-free-port",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Get a free udp port, for node",
   "main": "index.js",
   "dependencies": {
