@@ -4,8 +4,8 @@ Get a free udp port, for node
 
 ## Install
 
-```js
-npm i udp-free-port --save
+```
+npm i udp-free-port
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ freeUdpPort(function (err, port) {
     throw err // or do something else
   }
 
-  // user your port!
+  // use your port!
   var socket = dgram.createSocket('udp4')
   socket.bind(port, function (err) {
     if (err) {
@@ -28,6 +28,10 @@ freeUdpPort(function (err, port) {
   })
 })
 ```
+
+## Related
+
+- [tcp-free-port](https://gitlab.com/sebdeckers/tcp-free-port)
 
 ## License
 
